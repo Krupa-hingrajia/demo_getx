@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_demo/second_screen.dart';
@@ -50,145 +51,213 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: Container(
-                color: Colors.blue,
-                child: Row(
-                  children: [
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        margin: EdgeInsets.all(5),
-                        color: Colors.orange,
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Expanded(child: drodown()),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 100,
+                  itemBuilder: (BuildContext context, index) {
+                    return index == 0 ? Container(
+                      padding: EdgeInsets.all(02),
+                      color: Colors.blue,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              flex:1,
+                              child: Text("")),
+                          Expanded(flex: 2, child: Text("dgyggy", overflow: TextOverflow.ellipsis,)),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: Text("dgyggy", overflow: TextOverflow.ellipsis,)),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: Text("dgyggy", overflow: TextOverflow.ellipsis,)),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: Text("dgyggyjjghjfhgj", overflow: TextOverflow.ellipsis,)),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: Text("dgyggy", overflow: TextOverflow.ellipsis,)),
+                          Expanded(
+                              flex:1,
+                              child: Text("")),
+                          Expanded(
+                              flex:1,
+                              child: Text("")),
+                        ],
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        margin: EdgeInsets.all(5),
-                        color: Colors.orange,
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
+                    ) : Container(
+                      padding: EdgeInsets.all(02),
+                      // color: Colors.blue,
+                      child: Row(
+                        children: [
+                          Icon(Icons.add),
+                          Expanded(flex: 2, child: drodown()),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: drodown()),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: drodown()),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 2, child: drodown()),
+                          SizedBox(
+                            width: 02,
+                          ),
+                          Expanded(flex: 1, child: TextFormField()),
+                          Icon(Icons.add),
+                          Icon(Icons.add),
+                        ],
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        margin: EdgeInsets.all(5),
-                        color: Colors.orange,
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                                SizedBox(
-                                  width: 02,
-                                ),
-                                Flexible(
-                                    child: Text(
-                                  "cudhvugdhfyrh",
-                                  overflow: TextOverflow.ellipsis,
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+                    );
+                  }),
             ),
+            // Expanded(
+            //   child: Container(
+            //     color: Colors.blue,
+            //     child: Row(
+            //       children: [
+            //         Expanded(
+            //           flex: 1,
+            //           child: Container(
+            //             margin: EdgeInsets.all(5),
+            //             color: Colors.orange,
+            //             child: Column(
+            //               children: [
+            //                 Row(
+            //                   children: const [
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //                 Row(
+            //                   children: [
+            //                     Expanded(child: drodown()),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //         ),
+            //         Expanded(
+            //           flex: 1,
+            //           child: Container(
+            //             margin: EdgeInsets.all(5),
+            //             color: Colors.orange,
+            //             child: Column(
+            //               children: [
+            //                 Row(
+            //                   children: [
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //                 Row(
+            //                   children: [
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //         ),
+            //         Expanded(
+            //           flex: 1,
+            //           child: Container(
+            //             margin: EdgeInsets.all(5),
+            //             color: Colors.orange,
+            //             child: Column(
+            //               children: [
+            //                 Row(
+            //                   children: [
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //                 Row(
+            //                   children: [
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                     SizedBox(
+            //                       width: 02,
+            //                     ),
+            //                     Flexible(
+            //                         child: Text(
+            //                       "cudhvugdhfyrh",
+            //                       overflow: TextOverflow.ellipsis,
+            //                     )),
+            //                   ],
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
             Expanded(
               child: Container(
                 color: Colors.blue,
